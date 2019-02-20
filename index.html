@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Length Tester</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <main class="container-fluid">
+
+    <h1>In class App challenge!</h1>
+
+    <br>
+    <br>
+    
+    <h3>This is to find the length of the String</h3>
+<br>
+    <p>Enter a String:
+     <input id="inp" type="text" placeholder="Enter a String" >
+         </p>
+
+    
+    <button id="result"  class="btn btn-primary">Click here!!</button>
+
+    <p id="answer"></p>
+
+  </main>
+
+  <script>
+    console.log('SCRIPT START')
+    console.log('Declare the functions that is used to find the length of the String.....................')
+    function Len(str) {
+      return str.length
+    }
+    console.log('Defined length of the String=' + length)
+    console.log('Declare event listeners .......................')
+    document.getElementById('result').addEventListener('click', function () {
+      
+      const str1=document.getElementById('inp').value
+      console.log('str1='+str1)
+      
+      const ans = 'The length of the String is:'+Len(str1)+'.'
+      
+      document.getElementById('answer').innerHTML = ans
+    })
+    console.log('SCRIPT END')
+  </script>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+</body>
+
+</html>
